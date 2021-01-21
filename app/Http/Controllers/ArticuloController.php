@@ -15,7 +15,7 @@ class ArticuloController extends Controller
     public function store(Request $request)
     {
         $articulo = new Articulo;
-        $articulo->created($request->all());
+        $articulo->create($request->all());
     }
 
     public function show(Articulo $articulo)
